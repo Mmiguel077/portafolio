@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Menú Superior Fijo y Único para todos los dispositivos -->
+    <header class="barra-superior">
+        <div class="logo">Mi Portafolio</div>
+        <nav class="menu-navegacion">
+            <a href="#inicio" class="enlace-menu">Inicio</a>
+            <a href="#proyectos" class="enlace-menu">Proyectos</a>
+            <a href="#contacto" class="enlace-menu">Contacto</a>
+        </nav>
+    </header>
+
+    <!-- Sección Principal -->
+    <main>
+        <section id="inicio" class="seccion">
+            <div class="tarjeta-caja">
+                <h1>Hola, bienvenido</h1>
+                <p>Diseño interfaces limpias, modernas y funcionales enfocadas en la experiencia de usuario.</p>
+                <a href="#proyectos" class="boton">Ver proyectos</a>
+            </div>
+        </section>
+
+        <!-- Sección Sobre mi -->
+        <section id="sobre-mi" class="seccion">
+            <div class="tarjeta-caja">
+                <h2>Sobre mí</h2>
+                <p>Desarrollador front-end. Me enfoco en escribir código limpio, crear interfaces responsivas y cuidar cada detalle visual usando herramientas modernas.</p>
+                <a href="#proytectos" class="boton">Ver proyectos</a>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion">
+            <h2>Mis Proyectos</h2>
+            <div class="grid-proyectos">
+                <div class="tarjeta-caja">
+                    <h3>Proyecto 1</h3>
+                    <p>Descripción breve del proyecto y de las tecnologías utilizadas.</p>
+                </div>
+                <div class="tarjeta-caja">
+                    <h3>Proyecto 2</h3>
+                    <p>Descripción breve del proyecto y las tecnologías utilizadas.</p>
+                </div>
+            </div>
+        </section>
+
+        <form id="contacto" action="https://formspree.io/f/mdekggdd" method="POST" class="tarjeta-caja formulario-contacto">
+            <h3>Envíame un mensaje</h3>
+
+            <div class="grupo-input">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="name" required placeholder="Tu nombre">
+            </div>
+
+            <div class="grupo-input">
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="tu@correo.com">
+            </div>
+
+            <div class="grupo-input">
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" name="message" rows="4" required placeholder="Hola Miguel..."></textarea>
+            </div>
+
+            <button type="submit" class="boton">Enviar</button>
+
+        </form>
+
+    </main>
+
+    <!-- Botón Telegram -->
+    <a href="https://t.me/Miguel_M077"
+        target="_blank" 
+        class="boton-flotante boton-flotante-telegram" 
+        aria-label="Contactar por Telegram">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-send"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+    </a>
+
+    <!-- Botón WhatsApp -->
+    <a href="https://wa.me/5493876022259?text=Hola%20Miguel,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar." 
+        target="_blank" 
+        class="boton-flotante boton-flotante-whatsapp" 
+        aria-label="Contactar por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-message-circle"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+    </a>
+
+    <footer class="footer">
+        <p>&copy; 2026 Miguel. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
