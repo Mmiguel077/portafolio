@@ -2,7 +2,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* Reseteo básico y tipografía */
 * {
     margin: 0;
     padding: 0;
@@ -11,12 +10,11 @@ html {
 }
 
 body {
-    background-color: #121214; /* Fondo oscuro muy elegante */
+    background-color: #121214;
     color: #e1e1e6;
     line-height: 1.6;
 }
 
-/* Barra de navegación superior fija */
 .barra-superior {
     position: fixed;
     top: 0;
@@ -26,7 +24,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 18px 40px;
-    background: #202024; /* Gris oscuro bien marcado */
+    background: #202024;
     border-bottom: 2px solid #323238;
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
@@ -35,7 +33,7 @@ body {
 .logo {
     font-weight: 700;
     font-size: 1.2rem;
-    color: #00b37e; /* Verde brillante llamativo tipo terminal */
+    color: #00b37e;
 }
 
 .menu-navegacion {
@@ -54,7 +52,6 @@ body {
     color: #00b37e;
 }
 
-/* Secciones y Estructura */
 .seccion {
     min-height: 100vh;
     padding: 120px 20px 60px 20px;
@@ -72,7 +69,6 @@ body {
     color: #f1f1f3;
 }
 
-/* Tarjetas y Cajas con contraste fuerte */
 .tarjeta-caja {
     background: #202024;
     border: 2px solid #323238;
@@ -87,7 +83,7 @@ body {
 
 .tarjeta-caja:hover {
     transform: translateY(-3px);
-    border-color: #00b37e; /* Se marca con verde al pasar el mouse */
+    border-color: #00b37e;
 }
 
 .tarjeta-caja h1 {
@@ -102,7 +98,6 @@ body {
     font-size: 1.1rem;
 }
 
-/* Grid para proyectos */
 .grid-proyectos {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -120,10 +115,9 @@ body {
     color: #f1f1f3;
 }
 
-/* Botones con estilo moderno */
 .boton {
     display: inline-block;
-    background-color: #00b37e; /* Botón verde llamativo */
+    background-color: #00b37e;
     color: #121214;
     padding: 12px 28px;
     border-radius: 8px;
@@ -136,7 +130,6 @@ body {
     background-color: #00875f;
 }
 
-/* Ajustes responsivos sencillos para celulares */
 @media (max-width: 600px) {
     .barra-superior {
         padding: 15px 20px;
@@ -162,7 +155,6 @@ body {
     font-size: 0.875rem;
 }
 
-/* Base común flotante */
 .boton-flotante {
     position: fixed;
     right: 25px;
@@ -183,7 +175,6 @@ body {
     transform: scale(1.08) translateY(-2px);
 }
 
-/* Variante WhatsApp (más abajo) */
 .boton-flotante-whatsapp {
     bottom: 25px;
     background-color: #25d366;
@@ -193,7 +184,6 @@ body {
     box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
 }
 
-/* Variante Telegram (apilado arriba de WhatsApp: 25px + 55px de alto + 10px de separador = 90px) */
 .boton-flotante-telegram {
     bottom: 90px;
     background-color: #0088cc;
